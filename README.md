@@ -13,14 +13,14 @@ the formula module is used and `window.katex` is unavailable.
 ## Installation
 
 ```bash
-npm install react-quill quill
+npm install @adrianhelvik/react-quill quill
 ```
 
 ## Full fledged example
 
 ```javascript
 import React, { useState, useCallback, useEffect } from 'react'
-import ReactQuill from './lib.js'
+import ReactQuill from '@adrianhelvik/react-quill'
 import ReactDOM from 'react-dom'
 
 function Wrapper() {
