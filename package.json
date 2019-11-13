@@ -2,7 +2,7 @@
   "name": "@adrianhelvik/react-quill",
   "module": "dist/esm/lib.js",
   "main": "dist/cjs/lib.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.7.0",
@@ -11,6 +11,10 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adrianhelvik/react-quill"
   },
   "scripts": {
     "start": "react-scripts start",
