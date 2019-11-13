@@ -2,7 +2,7 @@
   "name": "@adrianhelvik/react-quill",
   "module": "dist/esm/lib.js",
   "main": "dist/cjs/lib.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
     "@babel/cli": "^7.7.0",
