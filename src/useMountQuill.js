@@ -13,9 +13,16 @@ export default function useMountQuill({
 
   const options = useDeepEqualMemo(passedOptions)
 
-  const requiresKatex = useMemo(() => {
-    return flatten(options.modules.toolbar).includes('formula')
+  const toolbar = useMemo(() => {
+    if (options && options.modules && options.modules.toolbar) {
+      return options.modules.toolbar
+    }
+    return []
   }, [options])
+
+  const requiresKatex = useMemo(() => {
+    return flatten(toolbar).includes('formula')
+  }, [toolbar])
 
   useEffect(() => {
     if (!requiresKatex) return

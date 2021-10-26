@@ -1,4 +1,5 @@
 import useQuillPlaceholder from './useQuillPlaceholder.js'
+import useMissingThemeWarning from './useMissingThemeWarning.js'
 import useQuillValueSync from './useQuillValueSync.js'
 import useQuillOnChange from './useQuillOnChange.js'
 import useMountQuill from './useMountQuill.js'
@@ -9,10 +10,16 @@ function useQuill({
   placeholder,
   uploadImage,
   onChange,
+  noTheme,
   element,
   options,
   value,
 }) {
+  useMissingThemeWarning({
+    options,
+    noTheme,
+  })
+
   const quill = useMountQuill({
     uploadImage,
     element,

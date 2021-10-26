@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function useQuillPlaceholder(quill, placeholder) {
+function useQuillPlaceholder(quill, placeholder = '') {
   useEffect(() => {
     if (!quill || !quill.root) return
     quill.root.dataset.placeholder = placeholder

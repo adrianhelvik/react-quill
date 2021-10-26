@@ -9,7 +9,7 @@ function useQuillOnChange(quill, onChange) {
     quill.on(
       'text-change',
       (handler = () => {
-        onChange(quill.getContents())
+        onChange(quill.getContents(), quill.container.firstChild.innerHTML)
       }),
     )
 

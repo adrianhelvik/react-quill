@@ -9,6 +9,7 @@ function ReactQuill({
   uploadImage,
   placeholder,
   onChange,
+  noTheme,
   options,
   value,
 }) {
@@ -19,6 +20,7 @@ function ReactQuill({
     placeholder,
     uploadImage,
     onChange,
+    noTheme,
     options,
     element,
     value,
