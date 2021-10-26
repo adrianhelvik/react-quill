@@ -2,7 +2,7 @@
   "name": "@adrianhelvik/react-quill",
   "module": "dist/esm/lib.js",
   "main": "dist/cjs/lib.js",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "private": false,
   "devDependencies": {
     "@babel/cli": "^7.15.7",
@@ -34,11 +34,7 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
