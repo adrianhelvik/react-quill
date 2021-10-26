@@ -2,9 +2,10 @@
   "name": "@adrianhelvik/react-quill",
   "module": "dist/esm/lib.js",
   "main": "dist/cjs/lib.js",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "private": false,
   "devDependencies": {
+    "@babel/cli": "^7.15.7",
     "@babel/preset-react": "^7.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -26,13 +27,18 @@
     "eject": "react-scripts eject",
     "build": "mkdir -p dist && npm run build:cjs && npm run build:esm",
     "build:cjs": "babel --presets @babel/preset-env,@babel/preset-react src --out-dir dist/cjs && rm dist/cjs/index.js",
-    "build:esm": "babel --presets @babel/preset-react                   src --out-dir dist/esm && rm dist/esm/index.js"
+    "build:esm": "babel --presets @babel/preset-react                   src --out-dir dist/esm && rm dist/esm/index.js",
+    "prepublish": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
