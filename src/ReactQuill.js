@@ -8,10 +8,12 @@ function ReactQuill({
   disallowColors,
   uploadImage,
   placeholder,
+  className,
   onChange,
   noTheme,
   options,
   value,
+  style,
 }) {
   const [element, setElement] = useState()
 
@@ -26,7 +28,7 @@ function ReactQuill({
     value,
   })
 
-  return <div ref={setElement} />
+  return <div style={style} className={className} ref={setElement} />
 }
 
 export default ReactQuill

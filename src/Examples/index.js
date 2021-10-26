@@ -1,6 +1,7 @@
 import './styles.css'
 import First from './First'
 import Second from './Second'
+import ClassAndStyle from './ClassAndStyle'
 
 export default function Examples() {
   return (
@@ -15,6 +16,7 @@ export default function Examples() {
         the warning.
       </p>
       <Second />
+      <ClassAndStyle />
     </>
   )
 }
