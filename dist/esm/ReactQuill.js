@@ -7,10 +7,12 @@ function ReactQuill({
   disallowColors,
   uploadImage,
   placeholder,
+  className,
   onChange,
   noTheme,
   options,
-  value
+  value,
+  style
 }) {
   const [element, setElement] = useState();
   useQuill({
@@ -24,6 +26,8 @@ function ReactQuill({
     value
   });
   return /*#__PURE__*/React.createElement("div", {
+    style: style,
+    className: className,
     ref: setElement
   });
 }

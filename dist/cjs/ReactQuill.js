@@ -37,10 +37,12 @@ function ReactQuill(_ref) {
   var disallowColors = _ref.disallowColors,
       uploadImage = _ref.uploadImage,
       placeholder = _ref.placeholder,
+      className = _ref.className,
       onChange = _ref.onChange,
       noTheme = _ref.noTheme,
       options = _ref.options,
-      value = _ref.value;
+      value = _ref.value,
+      style = _ref.style;
 
   var _useState = (0, _react.useState)(),
       _useState2 = _slicedToArray(_useState, 2),
@@ -58,6 +60,8 @@ function ReactQuill(_ref) {
     value: value
   });
   return /*#__PURE__*/_react.default.createElement("div", {
+    style: style,
+    className: className,
     ref: setElement
   });
 }

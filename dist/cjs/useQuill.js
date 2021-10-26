@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _useQuillPlaceholder = _interopRequireDefault(require("./useQuillPlaceholder.js"));
-
 var _useMissingThemeWarning = _interopRequireDefault(require("./useMissingThemeWarning.js"));
+
+var _useQuillPlaceholder = _interopRequireDefault(require("./useQuillPlaceholder.js"));
 
 var _useQuillValueSync = _interopRequireDefault(require("./useQuillValueSync.js"));
 
@@ -35,11 +35,13 @@ function useQuill(_ref) {
   var disallowColors = _ref.disallowColors,
       placeholder = _ref.placeholder,
       uploadImage = _ref.uploadImage,
+      className = _ref.className,
       onChange = _ref.onChange,
       noTheme = _ref.noTheme,
       element = _ref.element,
       options = _ref.options,
-      value = _ref.value;
+      value = _ref.value,
+      style = _ref.style;
   (0, _useMissingThemeWarning.default)({
     options: options,
     noTheme: noTheme
